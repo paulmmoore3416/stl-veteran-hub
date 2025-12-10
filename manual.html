@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Warrior to Warrior: Combat Veteran's Recovery Manual - Complete guide for managing PTSD, depression, anxiety, and rebuilding life after service.">
+    <title>Recovery Manual | Warrior to Warrior</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .manual-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            line-height: 1.8;
+        }
+        .manual-header {
+            text-align: center;
+            padding: 3rem 0;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+            color: white;
+            margin: -2rem -2rem 3rem -2rem;
+        }
+        .manual-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-family: var(--font-display);
+        }
+        .manual-subtitle {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+        .manual-author {
+            font-size: 1rem;
+            font-style: italic;
+            margin-top: 1rem;
+        }
+        .manual-toc {
+            background: var(--off-white);
+            padding: 2rem;
+            border-left: 4px solid var(--accent-color);
+            margin: 2rem 0;
+        }
+        .manual-toc h2 {
+            margin-top: 0;
+            color: var(--primary-dark);
+        }
+        .manual-toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .manual-toc li {
+            margin: 0.75rem 0;
+        }
+        .manual-toc a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .manual-toc a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+        .manual-section {
+            margin: 3rem 0;
+        }
+        .manual-section h2 {
+            color: var(--primary-dark);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+        }
+        .manual-section h3 {
+            color: var(--primary-color);
+            margin-top: 2rem;
+        }
+        .manual-section h4 {
+            color: var(--dark-gray);
+            margin-top: 1.5rem;
+        }
+        .manual-emergency {
+            background: var(--crisis-red);
+            color: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .manual-emergency h3 {
+            color: white;
+            margin-top: 0;
+        }
+        .manual-emergency a {
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-decoration: underline;
+        }
+        .manual-callout {
+            background: var(--off-white);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .manual-callout strong {
+            color: var(--primary-dark);
+        }
+        .back-to-hub {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: var(--accent-color);
+            color: var(--near-black);
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: var(--shadow-md);
+            z-index: 100;
+        }
+        .back-to-hub:hover {
+            background: var(--accent-dark);
+            text-decoration: none;
+        }
+        .download-button {
+            position: fixed;
+            top: 4rem;
+            right: 1rem;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: var(--shadow-md);
+            z-index: 100;
+        }
+        .download-button:hover {
+            background: var(--primary-dark);
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .manual-container {
+                padding: 1rem;
+            }
+            .manual-title {
+                font-size: 1.75rem;
+            }
+            .back-to-hub, .download-button {
+                position: relative;
+                top: auto;
+                right: auto;
+                display: block;
+                margin: 1rem 0;
+                text-align: center;
+            }
+        }
+        .print-only {
+            display: none;
+        }
+        @media print {
+            .back-to-hub, .download-button, .crisis-banner, nav {
+                display: none !important;
+            }
+            .print-only {
+                display: block;
+            }
+            .manual-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-to-hub">← Back to Resource Hub</a>
+    <a href="Veteran_Recovery_Manual.md" class="download-button" download>📥 Download PDF</a>
+
+    <div class="manual-container">
+        <div class="manual-header">
+            <h1 class="manual-title">WARRIOR TO WARRIOR</h1>
+            <p class="manual-subtitle">A Combat Veteran's Guide to Reclaiming Peace, Purpose, and Happiness</p>
+            <p class="manual-author">By Paul Moore, USMC Combat Veteran<br>3 Tours Iraq (2 Tours Ramadi, 1 Tour Al Asad)</p>
+        </div>
+
+        <div class="manual-emergency">
+            <h3>🚨 IN CRISIS RIGHT NOW?</h3>
+            <p><strong>Veterans Crisis Line:</strong> Call <a href="tel:988">988</a> then press 1 | Text <a href="sms:838255">838255</a></p>
+            <p>Available 24/7 | Free & Confidential</p>
+        </div>
+
+        <div class="print-only">
+            <p><strong>Downloaded from:</strong> https://paulmmoore3416.github.io/stl-veteran-hub/</p>
+            <p><strong>For latest resources:</strong> Visit the website for updated veteran resources in St. Louis area</p>
+        </div>
+
+        <section class="manual-callout">
+            <h3>A Message from Paul</h3>
+            <p><strong>Brother or Sister,</strong></p>
+            <p>I'm Paul Moore. I'm a 90% disabled Marine Corps combat veteran who served three tours in Iraq. I've walked through the fire you're in right now. PTSD, depression, anxiety, nightmares that steal your sleep, anger that explodes without warning, and the exhaustion that makes even getting out of bed feel impossible.</p>
+            <p>I've lost jobs - three of them - because I couldn't control my temper or make it in on time when the nightmares kept me up all night. I've battled drug addiction and alcohol trying to numb the pain. I've been homeless. I've experienced violence that rivaled what I saw in combat. At 40 years old, I finally started clawing my way back.</p>
+            <p>I wrote this manual because I know what it's like to feel lost after the Corps. I know what it's like to have a family you love but struggle to be present for them. I know what it's like to wonder if you'll ever feel normal again, or if happiness is even possible.</p>
+            <p>This isn't theory. This is what's working for me and what's helped other veterans I've talked to. It's taken me years to get to a semi-balanced point, and I'm still working on it every single day. But I'm here, I'm fighting, and I want you to fight with me.</p>
+            <p><strong>You're not alone in this. Let's walk this path together.</strong></p>
+            <p><em>Semper Fi,<br>Paul Moore</em></p>
+        </section>
+
+        <div class="manual-toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#understanding">1. Understanding Your Enemy: What's Really Happening</a></li>
+                <li><a href="#foundation">2. The Foundation: Sleep, Food, and Movement</a></li>
+                <li><a href="#battle-rhythm">3. Daily Battle Rhythm for Mental Health</a></li>
+                <li><a href="#invisible-wounds">4. Managing the Invisible Wounds</a></li>
+                <li><a href="#anger">5. Anger and Irritability: Defusing the IED Inside</a></li>
+                <li><a href="#relationships">6. Rebuilding Your Relationships</a></li>
+                <li><a href="#purpose">7. Finding Purpose After Service</a></li>
+                <li><a href="#career">8. Practical Career Guidance</a></li>
+                <li><a href="#crisis">9. Crisis Management: When Everything Falls Apart</a></li>
+                <li><a href="#resources">10. Resources and Support Networks</a></li>
+                <li><a href="#30-day">11. 30-Day Quick Start Action Plan</a></li>
+                <li><a href="#roadmap">12. Long-Term Recovery Roadmap</a></li>
+            </ul>
+        </div>
+
+        <div class="manual-section" id="understanding">
+            <h2>1. Understanding Your Enemy: What's Really Happening</h2>
+
+            <h3>Your Brain on Combat</h3>
+            <p>When you deployed, your brain adapted to keep you alive. It became hypervigilant, always scanning for threats. Your amygdala (the fear center) went into overdrive. Your stress hormones stayed elevated for months. Your sleep became light and fragmented because deep sleep could get you killed.</p>
+
+            <p><strong>The problem:</strong> Your brain is still in combat mode even though you're home.</p>
+
+            <p>This isn't weakness. This is a warrior's brain that hasn't received the stand-down order yet.</p>
+
+            <h3>What You're Fighting</h3>
+
+            <p><strong>PTSD:</strong> Your brain keeps replaying combat experiences because it's trying to process and make sense of traumatic events. The nightmares, flashbacks, and hypervigilance are your mind's way of saying "this doesn't compute with normal life."</p>
+
+            <p><strong>Depression:</strong> After the intense purpose and adrenaline of combat, civilian life can feel empty and meaningless. Your brain's reward system got rewired for high-stress situations. Normal life doesn't trigger the same neurochemical responses.</p>
+
+            <p><strong>Anxiety:</strong> Your threat detection system is stuck in the "on" position. You're constantly scanning for danger that isn't there.</p>
+
+            <p><strong>Anger/Irritability:</strong> This is often how PTSD and anxiety manifest in combat veterans. It's your fight-or-flight response with nowhere to go.</p>
+
+            <p><strong>Sleep Issues:</strong> Your brain won't allow deep sleep because it's still in survival mode.</p>
+
+            <h3>Why This Matters</h3>
+            <p>Understanding what's happening in your brain doesn't fix it, but it helps you stop blaming yourself. You're not broken. You're not weak. Your brain is doing exactly what it was trained to do - it just needs to be retrained for peacetime.</p>
+        </div>
+
+        <div class="manual-section" id="foundation">
+            <h2>2. The Foundation: Sleep, Food, and Movement</h2>
+
+            <p>Before anything else works, you need to address these three basics. I know you've heard this before, but here's why it actually matters:</p>
+
+            <h3>Sleep: The Most Important Battle</h3>
+
+            <div class="manual-callout">
+                <p><strong>Why it matters:</strong> Without sleep, nothing else works. Your PTSD symptoms get worse. Your anger increases. Your depression deepens. Sleep is when your brain processes trauma and regulates emotions.</p>
+            </div>
+
+            <h4>What works (from personal experience):</h4>
+
+            <p><strong>1. Keep a strict sleep schedule</strong> - Same bedtime and wake time every single day, even weekends. Your brain needs the routine.</p>
+
+            <p><strong>2. Create a wind-down routine (1-2 hours before bed):</strong></p>
+            <ul>
+                <li>No screens (the blue light tells your brain it's daytime)</li>
+                <li>Dim the lights in your house</li>
+                <li>Take a hot shower (the cooling afterward triggers sleep)</li>
+                <li>Write down racing thoughts in a journal to get them out of your head</li>
+                <li>Practice box breathing (4 seconds in, 4 hold, 4 out, 4 hold)</li>
+            </ul>
+
+            <p><strong>3. Make your bedroom a sleep sanctuary:</strong></p>
+            <ul>
+                <li>Cool temperature (65-68°F)</li>
+                <li>Completely dark (blackout curtains or eye mask)</li>
+                <li>White noise machine or fan (helps mask sudden sounds that trigger hypervigilance)</li>
+                <li>No TV in bedroom</li>
+            </ul>
+
+            <p><strong>4. Dealing with nightmares:</strong></p>
+            <ul>
+                <li>Keep a flashlight and water by the bed</li>
+                <li>When you wake from a nightmare: sit up, feet on floor, box breathing, remind yourself where you are</li>
+                <li>Consider Image Rehearsal Therapy (IRT) - rewrite the nightmare with a different ending, rehearse it during the day</li>
+                <li>Talk to your VA provider about Prazosin (medication specifically for PTSD nightmares)</li>
+            </ul>
+
+            <h3>Food: Fuel for Your Brain</h3>
+
+            <p><strong>Why it matters:</strong> Your gut and brain are directly connected. What you eat affects your mood, energy, anxiety levels, and ability to think clearly.</p>
+
+            <p><strong>What works:</strong></p>
+            <ul>
+                <li><strong>Eat at regular times</strong> - Three meals a day at consistent times</li>
+                <li><strong>Protein with every meal</strong> - Helps stabilize blood sugar and provides building blocks for neurotransmitters</li>
+                <li><strong>Cut back on triggers:</strong> Excessive caffeine, alcohol, sugar, processed foods</li>
+                <li><strong>Add in:</strong> Omega-3 fats, complex carbs, leafy greens, water</li>
+            </ul>
+
+            <h3>Movement: Getting Out of Your Head</h3>
+
+            <p><strong>Why it matters:</strong> Exercise is as effective as antidepressants for mild to moderate depression. It reduces anxiety, improves sleep, and gives your anger a healthy outlet.</p>
+
+            <p><strong>Start small and be consistent:</strong></p>
+            <ul>
+                <li>Week 1-2: 10-minute walk every day</li>
+                <li>Week 3-4: 15-minute walk every day</li>
+                <li>Week 5-6: 20-minute walk every day</li>
+                <li>Build from there</li>
+            </ul>
+
+            <div class="manual-callout">
+                <p><strong>Make it non-negotiable:</strong> This is part of your treatment plan, not optional.</p>
+            </div>
+        </div>
+
+        <div class="manual-section" id="battle-rhythm">
+            <h2>3. Daily Battle Rhythm for Mental Health</h2>
+
+            <p>In the military, you had structure. You knew what to do and when to do it. That structure kept you focused. Civilian life lacks that, and it's disorienting. You need to create your own battle rhythm.</p>
+
+            <h3>The Morning Routine (First 60-90 minutes)</h3>
+
+            <p><strong>This is the most important part of your day.</strong> How you start determines how the rest of the day goes.</p>
+
+            <h4>0600-0700: Foundation Tasks (Non-Negotiable)</h4>
+            <ul>
+                <li>Wake at the same time (use alarm across the room so you have to get up)</li>
+                <li>Make your bed (sense of accomplishment, order restored)</li>
+                <li>Drink 16 oz water (rehydrate)</li>
+                <li>5-10 minutes movement (walk, stretching, pushups - get blood flowing)</li>
+                <li>Shower and dress (even if you're not going anywhere)</li>
+                <li>Eat breakfast with protein</li>
+            </ul>
+
+            <h4>0700-0730: Mental Preparation</h4>
+            <ul>
+                <li>5-10 minutes of grounding practice (meditation, breathing, or journaling)</li>
+                <li>Review your three priorities for the day</li>
+                <li>Check in with yourself: "How am I feeling? What do I need today?"</li>
+            </ul>
+
+            <h3>Bad Days Protocol</h3>
+
+            <p>Some days you'll wake up and everything feels impossible. Use this:</p>
+
+            <div class="manual-callout">
+                <p><strong>Minimum Standard for Bad Days:</strong></p>
+                <ol>
+                    <li>Get out of bed</li>
+                    <li>Shower</li>
+                    <li>Eat one meal</li>
+                    <li>Go outside for 5 minutes</li>
+                    <li>Text or call one person</li>
+                    <li>Don't use substances to cope</li>
+                </ol>
+                <p>That's it. If you do those six things on a terrible day, you won. Tomorrow try for more.</p>
+            </div>
+        </div>
+
+        <div class="manual-section" id="invisible-wounds">
+            <h2>4. Managing the Invisible Wounds</h2>
+
+            <h3>PTSD: Living with the Intrusive Past</h3>
+
+            <h4>Grounding Techniques (for flashbacks, dissociation, or panic):</h4>
+
+            <p><strong>5-4-3-2-1 Method:</strong></p>
+            <ul>
+                <li>5 things you can see (say them out loud)</li>
+                <li>4 things you can touch (actually touch them)</li>
+                <li>3 things you can hear (listen carefully)</li>
+                <li>2 things you can smell</li>
+                <li>1 thing you can taste</li>
+            </ul>
+
+            <p><strong>Tactical Breathing (Box Breathing):</strong></p>
+            <ul>
+                <li>Inhale 4 seconds</li>
+                <li>Hold 4 seconds</li>
+                <li>Exhale 4 seconds</li>
+                <li>Hold 4 seconds</li>
+                <li>Repeat 4-5 cycles</li>
+            </ul>
+
+            <h4>Treatment Options That Work:</h4>
+            <ul>
+                <li><strong>Cognitive Processing Therapy (CPT):</strong> Teaches you to reframe traumatic thoughts. 12 sessions. Evidence-based for combat PTSD.</li>
+                <li><strong>Prolonged Exposure Therapy (PE):</strong> Gradually and safely confronts trauma memories. 8-15 sessions. Proven effective.</li>
+                <li><strong>EMDR:</strong> Uses bilateral stimulation while processing trauma. Works for many veterans.</li>
+                <li><strong>Veteran-specific group therapy:</strong> Connection with others who understand.</li>
+            </ul>
+
+            <div class="manual-callout">
+                <p><strong>Important:</strong> These therapies are hard. You'll feel worse before you feel better. But they work. Stick with it.</p>
+            </div>
+        </div>
+
+        <div class="manual-section" id="anger">
+            <h2>5. Anger and Irritability: Defusing the IED Inside</h2>
+
+            <p>This was my biggest struggle. I lost jobs because of my temper. I damaged relationships. I scared my kids. If this is you, you're not alone, and you can get better at managing it.</p>
+
+            <h3>The Anger Warning System</h3>
+
+            <p>Learn to recognize your early warning signs before you explode:</p>
+
+            <p><strong>Physical signs:</strong> Jaw clenching, fists tightening, face getting hot, heart racing, tension in shoulders/neck</p>
+
+            <p><strong>Create your personal warning system:</strong> Rate your anger 1-10. Identify what each level feels like for you.</p>
+
+            <p><strong>Your goal:</strong> Intervene at 4-6, before you reach 7.</p>
+
+            <h3>Intervention Strategies</h3>
+
+            <p><strong>When you notice warning signs (level 4-6):</strong></p>
+
+            <ol>
+                <li><strong>Remove yourself immediately</strong> - "I need to take a break." Walk away.</li>
+                <li><strong>Burn off the adrenaline</strong> - Pushups to failure, sprint, hit a heavy bag</li>
+                <li><strong>Regulate your breathing</strong> - 4-7-8 breathing, count your breaths</li>
+                <li><strong>Change your location</strong> - Go outside, different room, physical distance</li>
+            </ol>
+
+            <div class="manual-emergency">
+                <h3>Emergency Plan</h3>
+                <p><strong>If you're about to explode and can't walk away:</strong></p>
+                <ul style="text-align: left; max-width: 600px; margin: 1rem auto;">
+                    <li>Count backwards from 100 by 7s (forces your brain to shift)</li>
+                    <li>Clench and release your fists 10 times</li>
+                    <li>Focus on one object and describe it in extreme detail</li>
+                    <li>Text your crisis contact: "Need talk. Angry."</li>
+                    <li>Remember: This feeling will pass. Don't do something in 5 minutes you'll regret for 5 years.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="manual-section" id="relationships">
+            <h2>6. Rebuilding Your Relationships</h2>
+
+            <p>Your mental health issues affect everyone around you, especially your family. The good news: relationships can heal, but it takes intentional work.</p>
+
+            <h3>Communication Strategies</h3>
+
+            <p><strong>1. Take responsibility:</strong></p>
+            <ul>
+                <li>"I know my PTSD/anger/depression has affected you."</li>
+                <li>"I'm sorry for the times I've hurt you."</li>
+                <li>"I'm working on getting better, and I need your support."</li>
+            </ul>
+
+            <p><strong>2. Schedule connection time:</strong></p>
+            <ul>
+                <li>15 minutes of undivided attention with your partner every day</li>
+                <li>Individual time with each child (even 10 minutes)</li>
+                <li>Weekly family meeting to check in</li>
+                <li>Put your phone away during these times</li>
+            </ul>
+
+            <h3>Being Present with Your Kids</h3>
+
+            <p><strong>What kids need from you:</strong></p>
+            <ul>
+                <li>Consistency and predictability</li>
+                <li>To know they're safe with you</li>
+                <li>To know your moods aren't their fault</li>
+                <li>Quality time, not perfection</li>
+            </ul>
+
+            <p><strong>When you mess up:</strong> Apologize specifically: "I'm sorry I yelled. That wasn't okay."</p>
+        </div>
+
+        <div class="manual-section" id="purpose">
+            <h2>7. Finding Purpose After Service</h2>
+
+            <p>The military gave you mission, brotherhood, and identity. Losing that is one of the most difficult aspects of transition. You need to rebuild purpose.</p>
+
+            <h3>Finding Your New Mission</h3>
+
+            <p><strong>Step 1: Identify what mattered to you in service</strong></p>
+
+            <p>What did you value about being a Marine/Soldier/Sailor/Airman?</p>
+            <ul>
+                <li>Brotherhood/sisterhood?</li>
+                <li>Protecting others?</li>
+                <li>Being part of something important?</li>
+                <li>Physical challenges?</li>
+                <li>Leadership and responsibility?</li>
+                <li>Structure and discipline?</li>
+            </ul>
+
+            <p><strong>Step 2: Translate those values to civilian life</strong></p>
+
+            <p>If you valued <strong>protecting others:</strong> First responder, security work, coaching youth sports, mentoring at-risk kids, veteran advocacy</p>
+
+            <p>If you valued <strong>brotherhood:</strong> Veteran service organizations (VFW, American Legion, Team Rubicon), veteran-owned businesses, group therapy</p>
+
+            <h3>Service to Other Veterans</h3>
+
+            <div class="manual-callout">
+                <p><strong>This is powerful medicine:</strong></p>
+                <ul>
+                    <li>Helps others while healing yourself</li>
+                    <li>Reconnects you with military community</li>
+                    <li>Gives you purpose and identity</li>
+                    <li>Makes meaning from your suffering</li>
+                </ul>
+                <p><strong>You don't need to be "fixed" to help others.</strong> In fact, being in the struggle makes you more credible and relatable.</p>
+            </div>
+        </div>
+
+        <div class="manual-section" id="career">
+            <h2>8. Practical Career Guidance</h2>
+
+            <p>Let's talk about finding and keeping employment with PTSD, depression, and anger issues.</p>
+
+            <h3>Choosing the Right Job Environment</h3>
+
+            <p><strong>Many veterans thrive in:</strong></p>
+            <ul>
+                <li>Skilled trades (electrical, plumbing, HVAC, welding)</li>
+                <li>First responder roles</li>
+                <li>Federal employment (understands veteran needs, good benefits)</li>
+                <li>Logistics and supply chain</li>
+                <li>Cybersecurity</li>
+                <li>Veteran service organizations</li>
+            </ul>
+
+            <p><strong>Many veterans struggle in:</strong></p>
+            <ul>
+                <li>Open office environments (too stimulating)</li>
+                <li>Highly political corporate environments</li>
+                <li>Jobs with ambiguous expectations</li>
+                <li>High-drama workplaces</li>
+            </ul>
+
+            <h3>Disclosure: Should You Tell Your Employer?</h3>
+
+            <p><strong>When to disclose:</strong> After you have the job offer (before starting)</p>
+
+            <p><strong>What to say:</strong> "I'm a combat veteran with service-connected PTSD. It's managed, but I occasionally need [specific accommodation]. This doesn't affect my ability to do the job, and I'm committed to being a reliable employee."</p>
+
+            <p><strong>Accommodations you can request:</strong></p>
+            <ul>
+                <li>Flexible start time (within reason)</li>
+                <li>Work from home options</li>
+                <li>Quiet workspace or noise-canceling headphones</li>
+                <li>Time off for VA appointments</li>
+            </ul>
+        </div>
+
+        <div class="manual-section" id="crisis">
+            <h2>9. Crisis Management: When Everything Falls Apart</h2>
+
+            <p>You will have bad days, bad weeks, maybe even bad months. Here's how to survive them.</p>
+
+            <div class="manual-emergency">
+                <h3>⚠️ YOU'RE IN CRISIS IF:</h3>
+                <ul style="text-align: left; max-width: 600px; margin: 1rem auto;">
+                    <li>You're thinking about suicide</li>
+                    <li>You're using substances to get through each day</li>
+                    <li>You can't function (can't get out of bed, can't care for yourself)</li>
+                    <li>You're a danger to yourself or others</li>
+                </ul>
+                <h3>CALL 988, PRESS 1 RIGHT NOW</h3>
+                <p>Or text 838255 | Chat at veteranscrisisline.net</p>
+            </div>
+
+            <h3>Getting Through the Next Hour</h3>
+
+            <p>When you're in crisis, thinking long-term is impossible. Focus on the next hour:</p>
+
+            <ol>
+                <li><strong>Safety first:</strong> Am I safe right now? Are others safe?</li>
+                <li><strong>Basic grounding:</strong> Where am I? What day/time is it?</li>
+                <li><strong>Reach out:</strong> Call crisis line, text a friend, go be near people</li>
+                <li><strong>Physical regulation:</strong> Breathe, drink water, splash cold water on face</li>
+                <li><strong>Don't make big decisions:</strong> Don't quit your job, don't end relationships</li>
+                <li><strong>Survive to tomorrow:</strong> You just need to make it through today</li>
+            </ol>
+        </div>
+
+        <div class="manual-section" id="resources">
+            <h2>10. Resources and Support Networks</h2>
+
+            <h3>24/7 Crisis Resources</h3>
+            <ul>
+                <li><strong>Veterans Crisis Line:</strong> 988 then press 1 | Text 838255 | veteranscrisisline.net</li>
+                <li><strong>SAMHSA National Helpline:</strong> 800-662-4357 (substance abuse)</li>
+                <li><strong>Emergency:</strong> Call 911</li>
+            </ul>
+
+            <h3>For Complete St. Louis Area Resources</h3>
+            <p>Visit the <a href="index.html"><strong>St. Louis Veteran Resource Hub</strong></a> for 80+ verified local resources including:</p>
+            <ul>
+                <li>Housing and homeless services</li>
+                <li>Mental health and PTSD treatment</li>
+                <li>Employment assistance</li>
+                <li>VA benefits help</li>
+                <li>Substance abuse treatment</li>
+                <li>Family support services</li>
+            </ul>
+        </div>
+
+        <div class="manual-section" id="30-day">
+            <h2>11. 30-Day Quick Start Action Plan</h2>
+
+            <h3>Week 1: Stabilize the Foundation</h3>
+            <p><strong>Daily:</strong> Wake/sleep same time, make bed, eat 3 meals, go outside 10 minutes</p>
+            <p><strong>This week's goals:</strong></p>
+            <ul>
+                <li>✓ Read this manual completely</li>
+                <li>✓ Fill out your crisis plan</li>
+                <li>✓ Call VA to schedule mental health appointment</li>
+            </ul>
+
+            <h3>Week 2: Build Basic Habits</h3>
+            <p><strong>Add:</strong> 10-minute walk, 5 minutes breathing practice, journal 3 things daily</p>
+            <p><strong>This week's goals:</strong></p>
+            <ul>
+                <li>✓ Attend first therapy appointment or schedule one</li>
+                <li>✓ Create your morning routine</li>
+                <li>✓ Research one veteran organization</li>
+            </ul>
+
+            <h3>Week 3: Expand and Connect</h3>
+            <p><strong>Add:</strong> Increase exercise to 15-20 minutes, 10 minutes family time</p>
+            <p><strong>This week's goals:</strong></p>
+            <ul>
+                <li>✓ Reach out to one veteran buddy</li>
+                <li>✓ Attend one veteran event or meeting</li>
+                <li>✓ Practice one grounding technique</li>
+            </ul>
+
+            <h3>Week 4: Integrate and Plan</h3>
+            <p><strong>Continue all previous habits plus:</strong></p>
+            <ul>
+                <li>✓ Review your progress</li>
+                <li>✓ Make plan for next 30 days</li>
+                <li>✓ Do one thing toward finding purpose</li>
+                <li>✓ Celebrate completing 30 days!</li>
+            </ul>
+        </div>
+
+        <div class="manual-section" id="roadmap">
+            <h2>12. Long-Term Recovery Roadmap</h2>
+
+            <h3>What Recovery Looks Like</h3>
+
+            <p><strong>Recovery is NOT:</strong></p>
+            <ul>
+                <li>Never having symptoms</li>
+                <li>Being the person you were before war</li>
+                <li>Being "normal" (whatever that means)</li>
+                <li>Never struggling again</li>
+            </ul>
+
+            <p><strong>Recovery IS:</strong></p>
+            <ul>
+                <li>Managing symptoms so they don't control your life</li>
+                <li>Having more good days than bad</li>
+                <li>Using coping skills automatically</li>
+                <li>Maintaining relationships</li>
+                <li>Finding meaning and purpose</li>
+                <li>Being able to function (work, family, life)</li>
+                <li>Helping others</li>
+                <li>Building a life worth living</li>
+            </ul>
+
+            <div class="manual-callout">
+                <h3>Final Words</h3>
+                <p><strong>Brother or Sister,</strong></p>
+                <p>If you've read this far, you're serious about getting better. That means something.</p>
+                <p>I won't lie to you - this is hard. Some days you'll want to quit. Some days you'll feel like you're not making progress. Some days you'll wonder if happiness is even possible for people like us.</p>
+                <p>But I'm here to tell you: <strong>it is possible.</strong> I'm living proof, and I'm not special. I'm just a Marine who decided to keep fighting even when the enemy was invisible and the battlefield was my own mind.</p>
+                <p>You've survived firefights, IEDs, and everything combat threw at you. You can survive this too. You have the discipline, the courage, and the warrior spirit that got you through deployment. Apply those same qualities to this fight.</p>
+                <p><strong>Your family needs you. Other veterans need you. But most importantly, you deserve to live a life that's more than just surviving.</strong></p>
+                <p>We didn't leave anyone behind downrange. We're not leaving you behind now.</p>
+                <p>You've got this. We've got this. Together.</p>
+                <p><strong>Stay in the fight.</strong></p>
+                <p><em>Semper Fidelis,<br>Paul Moore<br>USMC Combat Veteran<br>Still Fighting, Still Healing, Still Here</em></p>
+            </div>
+        </div>
+
+        <div class="manual-emergency" style="margin-top: 4rem;">
+            <h3>📞 Emergency Quick Reference</h3>
+            <p><strong>Veterans Crisis Line:</strong> <a href="tel:988">988</a> press 1 | Text <a href="sms:838255">838255</a></p>
+            <p><strong>SAMHSA Helpline:</strong> <a href="tel:800-662-4357">800-662-4357</a></p>
+            <p><strong>Emergency:</strong> <a href="tel:911">911</a></p>
+            <p style="margin-top: 2rem;"><a href="index.html" style="color: white; text-decoration: underline; font-weight: 700;">← Return to St. Louis Veteran Resource Hub</a></p>
+        </div>
+
+        <div style="text-align: center; margin: 4rem 0 2rem 0; padding-top: 2rem; border-top: 2px solid var(--light-gray);">
+            <p><strong>Version 1.0 | December 2025</strong></p>
+            <p>This manual represents personal experiences and research. It is not a substitute for professional medical care.</p>
+            <p><strong>If you're in crisis, call 988 and press 1</strong></p>
+            <p style="margin-top: 2rem;"><em>For more resources: <a href="index.html">paulmmoore3416.github.io/stl-veteran-hub</a></em></p>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Print button functionality
+        function printManual() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
