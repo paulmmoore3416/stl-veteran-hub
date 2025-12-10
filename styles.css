@@ -430,6 +430,32 @@ a:hover {
     padding: 1rem 2.5rem;
 }
 
+.hero-cta .btn-primary {
+    background-color: var(--accent-color);
+    color: var(--near-black);
+    border-color: var(--accent-color);
+    font-weight: 700;
+}
+
+.hero-cta .btn-primary:hover {
+    background-color: var(--accent-dark);
+    border-color: var(--accent-dark);
+    color: var(--near-black);
+}
+
+.hero-cta .btn-secondary {
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--white);
+    font-weight: 700;
+}
+
+.hero-cta .btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--primary-dark);
+    border-color: var(--white);
+}
+
 .hero-author {
     margin-top: var(--spacing-lg);
     padding-top: var(--spacing-md);
@@ -743,16 +769,19 @@ a:hover {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
     color: var(--near-black);
+    font-weight: 700;
 }
 
 .manual-section .btn-primary:hover {
     background-color: var(--accent-dark);
     border-color: var(--accent-dark);
+    color: var(--near-black);
 }
 
 .manual-section .btn-secondary {
     border-color: var(--white);
     color: var(--white);
+    font-weight: 700;
 }
 
 .manual-section .btn-secondary:hover {
