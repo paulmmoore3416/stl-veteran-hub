@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive veteran resources for the St. Louis area. Combat veterans, homeless veterans, job seekers - we're here to help. By Paul Moore, USMC Combat Veteran.">
+    <title>St. Louis Veteran Resource Hub | Warrior to Warrior</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Emergency Crisis Banner -->
+    <div class="crisis-banner" id="crisisBanner">
+        <div class="crisis-content">
+            <strong>IN CRISIS?</strong> Veterans Crisis Line: Call <a href="tel:988">988</a> then press 1 | Text <a href="sms:838255">838255</a> | Available 24/7
+            <button class="close-banner" onclick="closeCrisisBanner()">&times;</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>STL Veteran Hub</h1>
+                <p class="nav-tagline">Warrior to Warrior</p>
+            </div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#manual">Recovery Manual</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="tel:988" class="crisis-link">Crisis: 988</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">You're Not Alone</h1>
+            <p class="hero-subtitle">Comprehensive veteran resources for the St. Louis area</p>
+            <p class="hero-description">Combat veterans. Homeless veterans. Job seekers. Whatever you're facing, we're here to help.</p>
+            <div class="hero-cta">
+                <a href="#resources" class="btn btn-primary">Find Resources</a>
+                <a href="#manual" class="btn btn-secondary">Recovery Manual</a>
+            </div>
+            <div class="hero-author">
+                <p><strong>By Paul Moore</strong> | USMC Combat Veteran |</p>
+                <p class="author-tagline">Still Fighting. Still Healing. Still Here.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission" id="mission">
+        <div class="container">
+            <div class="mission-content">
+                <h2 class="section-title">Our Mission</h2>
+                <div class="mission-text">
+                    <p class="lead">Hello, My name is Paul Moore and I am a Marine Corps combat veteran who served three tours in Iraq. I've walked through the fire - PTSD, Depression, Anxiety, Nightmares, Anger Issues, Job losses, Addiction, and Homelessness.</p>
+                    <p>This hub was created because St. Louis has incredible veteran services, but they're scattered and hard to find when you're in crisis. This is a centralized hub for every veteran resource in the St. Louis region (50-mile radius).</p>
+                    <p><strong>Whether you're:</strong></p>
+                    <ul class="mission-list">
+                        <li>A combat veteran struggling with PTSD</li>
+                        <li>Experiencing homelessness or housing instability</li>
+                        <li>Looking for employment or career training</li>
+                        <li>Battling addiction or mental health issues</li>
+                        <li>Needing benefits assistance</li>
+                        <li>Supporting a veteran family member</li>
+                    </ul>
+                    <p class="mission-cta-text">You'll find the help you need here. All resources are free or low-cost for veterans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Cards -->
+    <section class="quick-access">
+        <div class="container">
+            <h2 class="section-title">What Do You Need Right Now?</h2>
+            <div class="quick-grid">
+                <div class="quick-card emergency">
+                    <div class="quick-icon">&#9888;</div>
+                    <h3>Emergency / Crisis</h3>
+                    <p>Immediate help for suicide, violence, or crisis</p>
+                    <a href="#crisis-resources" class="quick-link">Get Help Now &rarr;</a>
+                </div>
+                <div class="quick-card housing">
+                    <div class="quick-icon">&#127969;</div>
+                    <h3>Housing & Shelter</h3>
+                    <p>Emergency shelter, transitional housing, permanent housing</p>
+                    <a href="#housing-resources" class="quick-link">Find Housing &rarr;</a>
+                </div>
+                <div class="quick-card mental-health">
+                    <div class="quick-icon">&#129504;</div>
+                    <h3>Mental Health</h3>
+                    <p>PTSD treatment, therapy, counseling, support groups</p>
+                    <a href="#mental-health-resources" class="quick-link">Get Support &rarr;</a>
+                </div>
+                <div class="quick-card employment">
+                    <div class="quick-icon">&#128188;</div>
+                    <h3>Jobs & Career</h3>
+                    <p>Employment services, job training, resume help</p>
+                    <a href="#employment-resources" class="quick-link">Find Work &rarr;</a>
+                </div>
+                <div class="quick-card benefits">
+                    <div class="quick-icon">&#128203;</div>
+                    <h3>VA Benefits</h3>
+                    <p>Claims assistance, disability ratings, healthcare enrollment</p>
+                    <a href="#benefits-resources" class="quick-link">Get Benefits &rarr;</a>
+                </div>
+                <div class="quick-card community">
+                    <div class="quick-icon">&#129309;</div>
+                    <h3>Community</h3>
+                    <p>Veteran organizations, peer support, events</p>
+                    <a href="#community-resources" class="quick-link">Connect &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources" id="resources">
+        <div class="container">
+            <h2 class="section-title">Complete Resource Directory</h2>
+            <p class="section-subtitle">All veteran resources within 50 miles of St. Louis</p>
+
+            <!-- Search and Filter -->
+            <div class="resource-search">
+                <input type="text" id="searchInput" placeholder="Search resources by name, service, or location..." onkeyup="filterResources()">
+                <select id="categoryFilter" onchange="filterResources()">
+                    <option value="all">All Categories</option>
+                    <option value="crisis">Crisis & Emergency</option>
+                    <option value="housing">Housing & Homelessness</option>
+                    <option value="mental-health">Mental Health</option>
+                    <option value="employment">Employment</option>
+                    <option value="benefits">VA Benefits</option>
+                    <option value="medical">Medical Care</option>
+                    <option value="substance-abuse">Substance Abuse</option>
+                    <option value="family">Family Support</option>
+                    <option value="community">Community & Organizations</option>
+                    <option value="legal">Legal Services</option>
+                </select>
+            </div>
+
+            <!-- Crisis Resources -->
+            <div class="resource-category" id="crisis-resources" data-category="crisis">
+                <h3 class="category-title">Crisis & Emergency Services</h3>
+                <div class="resources-grid">
+                    <div class="resource-card priority">
+                        <h4>Veterans Crisis Line</h4>
+                        <p class="resource-type">24/7 National Crisis Support</p>
+                        <p class="resource-description">Confidential crisis support for veterans and their families. Available 24 hours a day, 7 days a week.</p>
+                        <div class="resource-contact">
+                            <p><strong>Call:</strong> <a href="tel:988">988</a> then press 1</p>
+                            <p><strong>Text:</strong> <a href="sms:838255">838255</a></p>
+                            <p><strong>Chat:</strong> <a href="https://www.veteranscrisisline.net/get-help-now/chat/" target="_blank">veteranscrisisline.net</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>St. Louis Vet Center</h4>
+                        <p class="resource-type">Readjustment Counseling</p>
+                        <p class="resource-description">Confidential counseling for combat veterans, PTSD, depression, MST, and readjustment issues.</p>
+                        <div class="resource-contact">
+                            <p><strong>Address:</strong> 4735 Fyler Ave, St. Louis, MO 63109</p>
+                            <p><strong>Phone:</strong> <a href="tel:314-845-8580">314-845-8580</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>VA St. Louis Emergency Services</h4>
+                        <p class="resource-type">Emergency Medical Care</p>
+                        <p class="resource-description">24-hour emergency medical care for veterans. In an emergency, call 911 or go to nearest VA or non-VA ER.</p>
+                        <div class="resource-contact">
+                            <p><strong>Jefferson Barracks:</strong> <a href="tel:314-652-4100">314-652-4100</a></p>
+                            <p><strong>John Cochran:</strong> <a href="tel:314-289-6300">314-289-6300</a></p>
+                            <p><strong>Emergency:</strong> Call 911</p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Mission 22</h4>
+                        <p class="resource-type">Veteran Suicide Prevention</p>
+                        <p class="resource-description">Combat veteran retreats, therapy programs, and suicide prevention support.</p>
+                        <div class="resource-contact">
+                            <p><strong>Website:</strong> <a href="https://mission22.com" target="_blank">mission22.com</a></p>
+                            <p><strong>National Resource</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Housing Resources -->
+            <div class="resource-category" id="housing-resources" data-category="housing">
+                <h3 class="category-title">Housing & Homelessness Services</h3>
+                <div class="resources-grid">
+                    <div class="resource-card priority">
+                        <h4>VA Homeless Services - St. Louis</h4>
+                        <p class="resource-type">Comprehensive Homeless Support</p>
+                        <p class="resource-description">Immediate food, shelter, transitional and permanent housing, job training, life skills, and support services for homeless or at-risk veterans.</p>
+                        <div class="resource-contact">
+                            <p><strong>Phone:</strong> <a href="tel:314-652-4100">314-652-4100</a></p>
+                            <p><strong>Website:</strong> <a href="https://www.va.gov/st-louis-health-care/health-services/homeless-veteran-care/" target="_blank">VA St. Louis Homeless Care</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>MOVE (Missouri Veterans Endeavor)</h4>
+                        <p class="resource-type">Long-Term Housing & Case Management</p>
+                        <p class="resource-description">Long-term supportive housing, financial assistance, and clinical case management. Housed 200+ veterans since 2012.</p>
+                        <div class="resource-contact">
+                            <p><strong>Address:</strong> 8410 Engler Park Ct, St. John, MO 63114</p>
+                            <p><strong>Phone:</strong> <a href="tel:314-449-0200">314-449-0200</a></p>
+                            <p><strong>Website:</strong> <a href="https://www.move-stl.org" target="_blank">move-stl.org</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Veterans Community Project - St. Louis</h4>
+                        <p class="resource-type">Tiny Home Community</p>
+                        <p class="resource-description">Tiny homes for veterans experiencing homelessness plus Outreach Center for walk-in support services.</p>
+                        <div class="resource-contact">
+                            <p><strong>Phone:</strong> <a href="tel:816-200-0301">816-200-0301</a></p>
+                            <p><strong>Website:</strong> <a href="https://www.veteranscommunityproject.org/stlouis" target="_blank">veteranscommunityproject.org/stlouis</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Salvation Army Veterans Residence</h4>
+                        <p class="resource-type">Transitional Housing</p>
+                        <p class="resource-description">48 single apartments for male and female veterans with personalized intensive case management and goal-setting support.</p>
+                        <div class="resource-contact">
+                            <p><strong>Address:</strong> 3740 Marine Ave, St. Louis, MO 63118</p>
+                            <p><strong>Phone:</strong> <a href="tel:314-241-7704">314-241-7704</a></p>
+                            <p><strong>Website:</strong> <a href="https://centralusa.salvationarmy.org/midland/veterans-residence/" target="_blank">Salvation Army Veterans</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>St. Patrick Center - SSVF</h4>
+                        <p class="resource-type">Supportive Services for Veteran Families</p>
+                        <p class="resource-description">Rapid re-housing assistance, case management, budgeting assistance, and referrals. Serves St. Louis City/County and surrounding rural counties.</p>
+                        <div class="resource-contact">
+                            <p><strong>Address:</strong> 800 N. Tucker Blvd, St. Louis, MO 63101</p>
+                            <p><strong>Phone:</strong> <a href="tel:314-802-0700">314-802-0700</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>HUD-VASH Program</h4>
+                        <p class="resource-type">Housing Choice Vouchers</p>
+                        <p class="resource-description">Combines HUD housing vouchers with VA case management and clinical services for homeless veterans.</p>
+                        <div class="resource-contact">
+                            <p><strong>Contact:</strong> Through VA St. Louis</p>
+                            <p><strong>Phone:</strong> <a href="tel:314-652-4100">314-652-4100</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mental Health Resources -->
+            <div class="resource-category" id="mental-health-resources" data-category="mental-health">
+                <h3 class="category-title">Mental Health & PTSD Services</h3>
+                <div class="resources-grid">
+                    <div class="resource-card priority">
+                        <h4>VA St. Louis PTSD Clinic</h4>
+                        <p class="resource-type">Specialized PTSD Treatment</p>
+                        <p class="resource-description">Evidence-based PTSD treatment including CPT, PE, and EMDR. Individual and group therapy, medication management.</p>
+                        <div class="resource-contact">
+                            <p><strong>Jefferson Barracks:</strong> <a href="tel:314-652-4100">314-652-4100</a> ext. 65090 or 65766</p>
+                            <p><strong>John Cochran:</strong> <a href="tel:314-652-4100">314-652-4100</a> ext. 53110</p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>St. Louis VA Medical Centers</h4>
+                        <p class="resource-type">Full Mental Health Services</p>
+                        <p class="resource-description">Individual and group therapy, psychiatric care, recovery programs, medication management, and case management.</p>
+                        <div class="resource-contact">
+                            <p><strong>Jefferson Barracks:</strong> 1 Jefferson Barracks Dr, St. Louis, MO 63125</p>
+                            <p><strong>John Cochran:</strong> 915 N. Grand Blvd, St. Louis, MO 63106</p>
+                            <p><strong>Phone:</strong> <a href="tel:314-652-4100">314-652-4100</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Give an Hour</h4>
+                        <p class="resource-type">Free Mental Health Services</p>
+                        <p class="resource-description">Network of mental health providers offering free services to veterans and their families.</p>
+                        <div class="resource-contact">
+                            <p><strong>Website:</strong> <a href="https://giveanhour.org" target="_blank">giveanhour.org</a></p>
+                            <p><strong>National Network</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>PTSD Foundation of America</h4>
+                        <p class="resource-type">Combat PTSD Programs</p>
+                        <p class="resource-description">Free programs specifically for combat veterans including treatment and family programs.</p>
+                        <div class="resource-contact">
+                            <p><strong>Website:</strong> <a href="https://ptsdusa.org" target="_blank">ptsdusa.org</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Employment Resources -->
+            <div class="resource-category" id="employment-resources" data-category="employment">
+                <h3 class="category-title">Employment & Career Services</h3>
+                <div class="resources-grid">
+                    <div class="resource-card priority">
+                        <h4>SLATE Missouri Job Center</h4>
+                        <p class="resource-type">Comprehensive Job Services</p>
+                        <p class="resource-description">Free career guidance, resume workshops, job fairs, and training assistance for veterans and eligible spouses.</p>
+                        <div class="resource-contact">
+                            <p><strong>Address:</strong> 1520 Market St, St. Louis, MO 63103</p>
+                            <p><strong>Phone:</strong> <a href="tel:314-589-8000">314-589-8000</a></p>
+                            <p><strong>Website:</strong> <a href="https://www.stlworks.com" target="_blank">stlworks.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>VA Vocational Rehabilitation (VR&E)</h4>
+                        <p class="resource-type">Job Training & Education</p>
+                        <p class="resource-description">Job training, resume help, job placement, education benefits, and assistance starting your own business.</p>
+                        <div class="resource-contact">
+                            <p><strong>Address:</strong> 9700 Page Ave, St. Louis, MO 63132</p>
+                            <p><strong>Phone:</strong> <a href="tel:800-827-1000">800-827-1000</a> or <a href="tel:314-615-4413">314-615-4413</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Employment Connection</h4>
+                        <p class="resource-type">Homeless Veterans Reintegration Program</p>
+                        <p class="resource-description">Job placement services, housing support, and career assistance specifically for homeless veterans.</p>
+                        <div class="resource-contact">
+                            <p><strong>Address:</strong> 2838 Market St, St. Louis, MO 63103</p>
+                            <p><strong>Phone:</strong> <a href="tel:314-333-5627">314-333-5627</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>St. Patrick Center - Job Training</h4>
+                        <p class="resource-type">Job Readiness & Placement</p>
+                        <p class="resource-description">Resume building, interview skills, computer skills, job searching assistance, work clothing, and job placement.</p>
+                        <div class="resource-contact">
+                            <p><strong>Address:</strong> 800 N. Tucker Blvd, St. Louis, MO 63101</p>
+                            <p><strong>Phone:</strong> <a href="tel:314-802-0700">314-802-0700</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Hire Heroes USA</h4>
+                        <p class="resource-type">Free Job Search Assistance</p>
+                        <p class="resource-description">Resume writing, interview prep, job placement, and career mentoring for veterans.</p>
+                        <div class="resource-contact">
+                            <p><strong>Website:</strong> <a href="https://hireheroesusa.org" target="_blank">hireheroesusa.org</a></p>
+                            <p><strong>National Service</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Helmets to Hardhats</h4>
+                        <p class="resource-type">Construction Industry Careers</p>
+                        <p class="resource-description">Connects veterans with skilled training and career opportunities in construction trades.</p>
+                        <div class="resource-contact">
+                            <p><strong>Website:</strong> <a href="https://helmetstohardhats.org" target="_blank">helmetstohardhats.org</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits Resources -->
+            <div class="resource-category" id="benefits-resources" data-category="benefits">
+                <h3 class="category-title">VA Benefits & Claims Assistance</h3>
+                <div class="resources-grid">
+                    <div class="resource-card priority">
+                        <h4>VA St. Louis Regional Office</h4>
+                        <p class="resource-type">Full Benefits Services</p>
+                        <p class="resource-description">Compensation, pension, education, insurance, loan guaranty, and veteran readiness services for Missouri veterans.</p>
+                        <div class="resource-contact">
+                            <p><strong>Address:</strong> 9700 Page Ave, St. Louis, MO 63132</p>
+                            <p><strong>Phone:</strong> <a href="tel:800-827-1000">800-827-1000</a></p>
+                            <p><strong>Website:</strong> <a href="https://www.benefits.va.gov/stlouis/" target="_blank">benefits.va.gov/stlouis</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Missouri Veterans Commission</h4>
+                        <p class="resource-type">State Veterans Services</p>
+                        <p class="resource-description">State benefits, veterans homes, skilled nursing, cemeteries, VA claims assistance, and application help.</p>
+                        <div class="resource-contact">
+                            <p><strong>Address:</strong> 205 Jefferson St, 12th Floor, Jefferson City, MO 65101</p>
+                            <p><strong>Phone:</strong> <a href="tel:573-751-3779">573-751-3779</a></p>
+                            <p><strong>Website:</strong> <a href="https://veteranbenefits.mo.gov" target="_blank">veteranbenefits.mo.gov</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>St. Louis County Veterans Program</h4>
+                        <p class="resource-type">County Veterans Services</p>
+                        <p class="resource-description">Intake, referrals, and assistance for veterans and families accessing county and VA benefits.</p>
+                        <div class="resource-contact">
+                            <p><strong>Website:</strong> <a href="https://stlouiscountymo.gov/st-louis-county-departments/human-services/county-veterans-program/" target="_blank">St. Louis County Veterans</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Disabled American Veterans (DAV)</h4>
+                        <p class="resource-type">Free Claims Assistance</p>
+                        <p class="resource-description">Free professional assistance with VA claims, benefits, and appeals for disabled veterans and families.</p>
+                        <div class="resource-contact">
+                            <p><strong>Website:</strong> <a href="https://dav.org" target="_blank">dav.org</a></p>
+                            <p><strong>Serves:</strong> St. Louis City/County, Franklin, Jefferson, Lincoln, St. Charles, Warren Counties</p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>St. Charles County Veterans Services</h4>
+                        <p class="resource-type">Veterans Service Officers</p>
+                        <p class="resource-description">Local claims assistance and benefits support for St. Charles County veterans.</p>
+                        <div class="resource-contact">
+                            <p><strong>Address:</strong> 201 N. 2nd St, Suite 203, St. Charles, MO</p>
+                            <p><strong>Phone:</strong> <a href="tel:636-949-7900">636-949-7900</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Substance Abuse Resources -->
+            <div class="resource-category" id="substance-abuse-resources" data-category="substance-abuse">
+                <h3 class="category-title">Substance Abuse Treatment</h3>
+                <div class="resources-grid">
+                    <div class="resource-card priority">
+                        <h4>VA SARRTP - Jefferson Barracks</h4>
+                        <p class="resource-type">Substance Abuse Residential Treatment</p>
+                        <p class="resource-description">Residential and outpatient intensive care for veterans recovering from substance use disorders.</p>
+                        <div class="resource-contact">
+                            <p><strong>Address:</strong> 1 Jefferson Barracks Dr, St. Louis, MO 63125</p>
+                            <p><strong>Phone:</strong> <a href="tel:314-652-4100">314-652-4100</a> ext. 66598</p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>SAMHSA National Helpline</h4>
+                        <p class="resource-type">24/7 Treatment Referrals</p>
+                        <p class="resource-description">Free, confidential, 24/7 treatment referral and information service for substance abuse.</p>
+                        <div class="resource-contact">
+                            <p><strong>Phone:</strong> <a href="tel:800-662-4357">800-662-4357</a></p>
+                            <p><strong>Available:</strong> 24 hours a day, 7 days a week</p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Alcoholics Anonymous (AA) - St. Louis</h4>
+                        <p class="resource-type">Peer Support Groups</p>
+                        <p class="resource-description">Many meetings throughout St. Louis area, including veteran-focused meetings.</p>
+                        <div class="resource-contact">
+                            <p><strong>Website:</strong> <a href="https://www.aa.org" target="_blank">aa.org</a></p>
+                            <p><strong>Find Meetings:</strong> Local AA directory</p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Narcotics Anonymous (NA) - St. Louis</h4>
+                        <p class="resource-type">Peer Support Groups</p>
+                        <p class="resource-description">Multiple meetings throughout the St. Louis area for those recovering from drug addiction.</p>
+                        <div class="resource-contact">
+                            <p><strong>Website:</strong> <a href="https://www.na.org" target="_blank">na.org</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Family Support Resources -->
+            <div class="resource-category" id="family-resources" data-category="family">
+                <h3 class="category-title">Family Support Services</h3>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h4>H.E.R.O.E.S. Care</h4>
+                        <p class="resource-type">Military Family Support</p>
+                        <p class="resource-description">Support for military families including financial assistance, health services, and community events.</p>
+                        <div class="resource-contact">
+                            <p><strong>Phone:</strong> <a href="tel:636-600-0096">636-600-0096</a></p>
+                            <p><strong>Website:</strong> <a href="https://www.heroescare.org" target="_blank">heroescare.org</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Coaching Into Care</h4>
+                        <p class="resource-type">Family Member Support</p>
+                        <p class="resource-description">Support for family members helping veterans connect to care. Guidance on how to approach and support your veteran.</p>
+                        <div class="resource-contact">
+                            <p><strong>Phone:</strong> <a href="tel:888-823-7458">888-823-7458</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>National Military Family Association</h4>
+                        <p class="resource-type">Military Family Resources</p>
+                        <p class="resource-description">Support, resources, and advocacy for military families.</p>
+                        <div class="resource-contact">
+                            <p><strong>Website:</strong> <a href="https://militaryfamily.org" target="_blank">militaryfamily.org</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community & Organizations -->
+            <div class="resource-category" id="community-resources" data-category="community">
+                <h3 class="category-title">Veteran Organizations & Community</h3>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h4>Team Rubicon</h4>
+                        <p class="resource-type">Disaster Relief & Purpose</p>
+                        <p class="resource-description">Veterans serving in disaster relief operations. Provides mission and brotherhood through community service.</p>
+                        <div class="resource-contact">
+                            <p><strong>Website:</strong> <a href="https://teamrubiconusa.org" target="_blank">teamrubiconusa.org</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>The Mission Continues</h4>
+                        <p class="resource-type">Veteran Service Projects</p>
+                        <p class="resource-description">Veterans volunteer with nonprofit partners on community service projects addressing local needs.</p>
+                        <div class="resource-contact">
+                            <p><strong>Address:</strong> 1141 S. 7th St, St. Louis, MO 63104</p>
+                            <p><strong>Website:</strong> <a href="https://missioncontinues.org" target="_blank">missioncontinues.org</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Veterans of Foreign Wars (VFW)</h4>
+                        <p class="resource-type">Veteran Community</p>
+                        <p class="resource-description">Local VFW posts throughout St. Louis area. Community support, benefits help, and camaraderie.</p>
+                        <div class="resource-contact">
+                            <p><strong>Website:</strong> <a href="https://www.vfw.org" target="_blank">vfw.org</a></p>
+                            <p><strong>Find Post:</strong> Search by zip code</p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>American Legion</h4>
+                        <p class="resource-type">Veteran Community</p>
+                        <p class="resource-description">Local American Legion posts throughout St. Louis area. Community events, support, and advocacy.</p>
+                        <div class="resource-contact">
+                            <p><strong>Website:</strong> <a href="https://www.legion.org" target="_blank">legion.org</a></p>
+                            <p><strong>St. Charles Post 312:</strong> <a href="tel:636-947-7666">636-947-7666</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Wounded Warrior Project</h4>
+                        <p class="resource-type">Wounded Veteran Support</p>
+                        <p class="resource-description">Mental health programs, career counseling, long-term care, and advocacy for wounded veterans.</p>
+                        <div class="resource-contact">
+                            <p><strong>Website:</strong> <a href="https://woundedwarriorproject.org" target="_blank">woundedwarriorproject.org</a></p>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Iraq and Afghanistan Veterans of America (IAVA)</h4>
+                        <p class="resource-type">Post-9/11 Veteran Community</p>
+                        <p class="resource-description">Advocacy, community, and Quick Reaction Force peer support for Iraq/Afghanistan veterans.</p>
+                        <div class="resource-contact">
+                            <p><strong>Website:</strong> <a href="https://iava.org" target="_blank">iava.org</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recovery Manual Section -->
+    <section class="manual-section" id="manual">
+        <div class="container">
+            <h2 class="section-title">Warrior to Warrior Recovery Manual</h2>
+            <div class="manual-content">
+                <div class="manual-intro">
+                    <p class="lead">A comprehensive guide for combat veterans struggling with PTSD, depression, anxiety, anger, and the invisible wounds of war.</p>
+                    <p>Written by Paul Moore, USMC combat veteran, based on personal experience and years of recovery work. This manual covers:</p>
+                    <ul class="manual-list">
+                        <li>Understanding PTSD, depression, and anxiety</li>
+                        <li>Daily battle rhythm for mental health</li>
+                        <li>Managing anger and preventing explosions</li>
+                        <li>Rebuilding relationships with family</li>
+                        <li>Finding purpose after service</li>
+                        <li>Career guidance for veterans</li>
+                        <li>Crisis management and suicide prevention</li>
+                        <li>30-day action plan and long-term recovery roadmap</li>
+                    </ul>
+                </div>
+                <div class="manual-cta">
+                    <a href="Veteran_Recovery_Manual.md" class="btn btn-primary" download>Download Complete Manual</a>
+                    <a href="manual.html" class="btn btn-secondary">Read Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Need to add a resource?</h3>
+                    <p>If you know of a veteran service organization or resource in the St. Louis area that should be included, please reach out.</p>
+                    <h3>Veteran helping veterans?</h3>
+                    <p>If you're a veteran working to help others in the St. Louis area and want to collaborate, let's connect.</p>
+                    <h3>In crisis?</h3>
+                    <p><strong>Don't wait. Call now:</strong></p>
+                    <p class="crisis-contact">Veterans Crisis Line: <a href="tel:988">988</a> then press 1</p>
+                </div>
+                <div class="contact-form-note">
+                    <p><em>This resource hub is maintained by Paul Moore, USMC Combat Veteran. All resources listed are free or low-cost services available to veterans in the St. Louis metropolitan area (50-mile radius).</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Emergency Resources</h4>
+                    <ul>
+                        <li>Veterans Crisis: <a href="tel:988">988</a> press 1</li>
+                        <li>Crisis Text: <a href="sms:838255">838255</a></li>
+                        <li>SAMHSA: <a href="tel:800-662-4357">800-662-4357</a></li>
+                        <li>Emergency: <a href="tel:911">911</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#mission">Mission</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#manual">Recovery Manual</a></li>
+                        <li><a href="https://www.va.gov/st-louis-health-care/" target="_blank">VA St. Louis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>By Veterans, For Veterans</h4>
+                    <p>This resource hub is maintained by veterans who understand the struggle. All information is provided free of charge to help our brothers and sisters find the support they need.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 St. Louis Veteran Resource Hub | By Paul Moore, USMC Combat Veteran</p>
+                <p class="footer-tagline">Still Fighting. Still Healing. Still Here.</p>
+                <p class="disclaimer">This site is not affiliated with the Department of Veterans Affairs. For official VA information, visit <a href="https://www.va.gov" target="_blank">va.gov</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
